@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "weather",
+			"path": "../../js prac/weather"
+		},
+		{
+			"name": "sigma with dev cource",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "weather"
+	}
+}
