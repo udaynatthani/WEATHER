@@ -32,22 +32,35 @@ body{
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px;
-
+    font-size: clamp(16px, 2vw, 18px);
+    width: 100%;
+    max-width: 400px;
 }
 .search button{
     border: 0;
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: clamp(45px, 8vw, 60px);
+    height: clamp(45px, 8vw, 60px);
     cursor: pointer;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .search button img{
-    width: 16px;
+    width: clamp(12px, 2vw, 16px);
+    height: auto;
+}
 
+@media screen and (max-width: 480px) {
+    .search {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .search input {
+        margin-right: 0;
+    }
 }
 .weather-icon{
     width: 170px;
